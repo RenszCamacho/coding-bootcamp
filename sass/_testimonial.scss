@@ -14,7 +14,7 @@
     position: relative;
     width: 32.7rem;
     height: 30.8rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     background-image: url(../images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,8 @@
     box-shadow: 0 35px 15px -19px rgba(111, 85, 168, 0.3);
   }
 
-  &__img--john {
+  &__img--john,
+  &__img--tanya {
     display: none;
   }
 
@@ -59,7 +60,7 @@
     justify-content: end;
     width: 31.1rem;
     height: 22.8rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     background-image: url(../images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-size: 60px 50px;
@@ -92,4 +93,16 @@
       color: $brand-200;
     }
   }
+
+  &__quote--john,
+  &__subtitle--john,
+  &__quote--tanya,
+  &__subtitle--tanya {
+    display: none;
+  }
+}
+
+.show {
+  display: block;
+  animation: fadeIn 0.6s;
 }

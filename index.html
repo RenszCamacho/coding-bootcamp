@@ -21,7 +21,7 @@
     <main class="testimonial">
       <div class="testimonial__carousel">
         <img
-          class="testimonial__img testimonial__img--tanya"
+          class="show testimonial__img testimonial__img--tanya"
           src="./images/image-tanya.jpg"
           alt="tanya"
         />
@@ -32,6 +32,7 @@
         />
         <div class="testimonial__arrowsBox">
           <button
+            id="next"
             name="next"
             aria-label="next"
             type="button"
@@ -47,6 +48,7 @@
             </svg>
           </button>
           <button
+            id="previous"
             name="previous"
             aria-label="previous"
             type="button"
@@ -65,14 +67,24 @@
       </div>
 
       <div class="testimonial__quoteBox">
-        <p class="testimonial__quote">
+        <p class="show testimonial__quote testimonial__quote--tanya">
           “ I’ve been interested in coding for a while but never taken the jump,
           until now. I couldn’t recommend this course enough. I’m now in the job
           of my dreams and so excited about the future. ”
         </p>
-        <h2 class="testimonial__subtitle">
+        <h2 class="show testimonial__subtitle testimonial__subtitle--tanya">
           <span>Tanya Sinclair</span>
           <span>UX Engineer</span>
+        </h2>
+
+        <p class="testimonial__quote testimonial__quote--john">
+          “ If you want to lay the best foundation possible I’d recommend taking
+          this course. The depth the instructors go into is incredible. I now
+          feel so confident about starting up as a professional developer. ”
+        </p>
+        <h2 class="testimonial__subtitle testimonial__subtitle--john">
+          <span>John Tarkpor</span>
+          <span>Junior Front-end Developer</span>
         </h2>
       </div>
     </main>
