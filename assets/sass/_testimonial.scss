@@ -32,11 +32,6 @@
     box-shadow: 0 35px 15px -19px rgba(111, 85, 168, 0.3);
   }
 
-  &__img--john,
-  &__img--tanya {
-    display: none;
-  }
-
   &__arrowsBox {
     background-color: white;
     position: absolute;
@@ -93,16 +88,14 @@
       color: $brand-200;
     }
   }
+}
 
-  &__quote--john,
-  &__subtitle--john,
-  &__quote--tanya,
-  &__subtitle--tanya {
-    display: none;
-  }
+[class$="--tanya"],
+[class$="--john"] {
+  display: none;
 }
 
 .show {
   display: block;
-  animation: fadeIn 0.6s;
+  animation: fadeIn 1s;
 }
