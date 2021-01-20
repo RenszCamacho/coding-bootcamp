@@ -19,7 +19,6 @@
     position: relative;
     width: 32.7rem;
     height: 30.8rem;
-    // border: 1px solid red;
     background-image: url(../images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,13 +75,11 @@
   }
 
   &__quoteBox {
-    position: relative;
     display: -webkit-box;
     flex-direction: column;
     justify-content: end;
     width: 31.1rem;
     height: 22.8rem;
-    // border: 1px solid red;
     background-image: url(../images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-size: 60px 50px;
