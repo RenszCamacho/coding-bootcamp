@@ -141,6 +141,17 @@
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+}
+
 [class$="--tanya"],
 [class$="--john"] {
   display: none;
