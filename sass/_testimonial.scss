@@ -53,7 +53,10 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  &__quote {
+  &__quoteBox {
+    display: -webkit-box;
+    flex-direction: column;
+    justify-content: end;
     width: 31.1rem;
     height: 22.8rem;
     border: 1px solid red;
@@ -62,5 +65,31 @@
     background-size: 60px 50px;
     background-position: center top;
     margin: 3.2rem 3.2rem 7.5rem 3.2rem;
+  }
+
+  &__quote {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: $brand-100;
+    margin-bottom: 1.9rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    color: $brand-100;
+
+    span {
+      display: block;
+    }
+
+    span:last-child {
+      font-weight: 500;
+      color: $brand-200;
+    }
   }
 }
