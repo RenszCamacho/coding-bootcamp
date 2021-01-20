@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: center;
 
+  @include rwd(large) {
+    flex-direction: row-reverse;
+    background-size: 61rem;
+  }
+
   &__carousel {
     position: relative;
     width: 32.7rem;
@@ -23,6 +28,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include rwd(large) {
+      width: 65rem;
+      height: 63rem;
+      margin: 0;
+      background-size: contain;
+    }
   }
 
   &__img {
@@ -30,6 +42,11 @@
     height: 25.3rem;
     border-radius: 1rem;
     box-shadow: 0 35px 15px -19px rgba(111, 85, 168, 0.3);
+
+    @include rwd(large) {
+      width: 54rem;
+      height: 54rem;
+    }
   }
 
   &__arrowsBox {
@@ -37,6 +54,10 @@
     position: absolute;
     bottom: 1.4rem;
     border-radius: 4rem;
+
+    @include rwd(large) {
+      left: 11.5rem;
+    }
   }
 
   &__arrow {
@@ -47,9 +68,15 @@
     width: 4rem;
     height: 4rem;
     -webkit-tap-highlight-color: transparent;
+
+    @include rwd(large) {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
   }
 
   &__quoteBox {
+    position: relative;
     display: -webkit-box;
     flex-direction: column;
     justify-content: end;
@@ -61,6 +88,16 @@
     background-size: 60px 50px;
     background-position: center top;
     margin: 3.2rem 3.2rem 7.5rem 3.2rem;
+    z-index: 1;
+
+    @include rwd(large) {
+      width: 63.5rem;
+      height: 35.4rem;
+      margin: 0;
+      margin-right: -11.5rem;
+      background-size: 120px 100px;
+      background-position: 19% top;
+    }
   }
 
   &__quote {
@@ -70,6 +107,12 @@
     text-align: center;
     color: $brand-100;
     margin-bottom: 1.9rem;
+
+    @include rwd(large) {
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+      text-align: start;
+    }
   }
 
   &__subtitle {
@@ -81,11 +124,22 @@
 
     span {
       display: block;
+
+      @include rwd(large) {
+        display: inline;
+        margin-right: 1rem;
+      }
     }
 
     span:last-child {
       font-weight: 500;
       color: $brand-200;
+    }
+
+    @include rwd(large) {
+      font-size: 2rem;
+      line-height: 3.8rem;
+      text-align: start;
     }
   }
 }
