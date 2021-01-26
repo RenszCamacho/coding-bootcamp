@@ -1,6 +1,6 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
-![Design preview for the Coding Bootcamp Testimonials Slider coding chttps://coding-bootcamp-fm.netlify.app/hallenge](./assets/design/desktop-preview.jpg)
+![Design preview for the Coding Bootcamp Testimonials Slider coding chttps://coding-bootcamp-fm.netlify.app/hallenge](./src/design/desktop-preview.jpg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c5a44590-3ad5-42c5-bcb5-c9af85031c40/deploy-status)](https://app.netlify.com/sites/coding-bootcamp-fm/deploys)
 
