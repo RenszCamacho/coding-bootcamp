@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10rem;
 
   @include rwd(large) {
     flex-direction: row-reverse;
@@ -17,16 +18,22 @@
 
   &__carousel {
     position: relative;
-    width: 32.7rem;
+    width: 27.7rem;
     height: 30.8rem;
     background-image: url(../images/pattern-bg.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     margin: 2.4rem 2.4rem 0 2.4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include rwd(medium) {
+      width: 95%;
+      height: 53.8rem;
+    }
 
     @include rwd(large) {
       width: 65rem;
@@ -37,25 +44,32 @@
   }
 
   &__img {
-    width: 25.4rem;
-    height: 25.3rem;
+    width: 22.4rem;
     border-radius: 1rem;
     box-shadow: 0 35px 15px -19px rgba(111, 85, 168, 0.3);
 
-    @include rwd(large) {
-      width: 54rem;
-      height: 54rem;
+    @include rwd(medium) {
+      width: 80%;
     }
   }
 
   &__arrowsBox {
     background-color: white;
     position: absolute;
-    bottom: 1.4rem;
+    bottom: 2.4rem;
     border-radius: 4rem;
+
+    // @include rwd(medium) {
+    //   bottom: 2.4rem;
+    // }
 
     @include rwd(large) {
       left: 11.5rem;
+      bottom: 10rem;
+    }
+
+    @include rwd(xlarge) {
+      bottom: 4rem;
     }
   }
 
@@ -78,14 +92,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 31.1rem;
-    height: 22.8rem;
+    width: 27.1rem;
+    height: 24.8rem;
     background-image: url(../images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-size: 60px 50px;
     background-position: center top;
     margin: 3.2rem 3.2rem 7.5rem 3.2rem;
     z-index: 1;
+
+    @include rwd(medium) {
+      width: unset;
+      height: 17.8rem;
+      margin: 7.2rem 3.2rem;
+    }
 
     @include rwd(large) {
       width: 63.5rem;
@@ -106,9 +126,13 @@
     margin-bottom: 1.9rem;
 
     @include rwd(large) {
+      font-size: 2.8rem;
+      line-height: 4.1rem;
+      text-align: start;
+    }
+    @include rwd(xlarge) {
       font-size: 3.2rem;
       line-height: 4.4rem;
-      text-align: start;
     }
   }
 
