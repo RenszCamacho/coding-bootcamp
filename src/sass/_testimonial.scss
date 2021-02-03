@@ -59,9 +59,9 @@
     bottom: 2.4rem;
     border-radius: 4rem;
 
-    // @include rwd(medium) {
-    //   bottom: 2.4rem;
-    // }
+    @include rwd(medium) {
+      bottom: 4.2rem;
+    }
 
     @include rwd(large) {
       left: 11.5rem;

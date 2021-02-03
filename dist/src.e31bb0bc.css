@@ -412,7 +412,7 @@ img {
           justify-content: center;
   padding: 10rem;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -450,7 +450,7 @@ img {
     height: 53.8rem;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__carousel {
     width: 65rem;
     height: 63rem;
@@ -475,7 +475,12 @@ img {
   bottom: 2.4rem;
   border-radius: 4rem;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 768px) {
+  .testimonial__arrowsBox {
+    bottom: 4.2rem;
+  }
+}
+@media screen and (min-width: 1020px) {
   .testimonial__arrowsBox {
     left: 11.5rem;
     bottom: 10rem;
@@ -495,7 +500,7 @@ img {
   height: 4rem;
   -webkit-tap-highlight-color: transparent;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__arrow {
     width: 5.6rem;
     height: 5.6rem;
@@ -528,7 +533,7 @@ img {
     margin: 7.2rem 3.2rem;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__quoteBox {
     width: 63.5rem;
     height: 35.4rem;
@@ -546,7 +551,7 @@ img {
   color: #202046;
   margin-bottom: 1.9rem;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__quote {
     font-size: 2.8rem;
     line-height: 4.1rem;
@@ -569,7 +574,7 @@ img {
 .testimonial__subtitle span {
   display: block;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__subtitle span {
     display: inline;
     margin-right: 1rem;
@@ -579,7 +584,7 @@ img {
   font-weight: 500;
   color: #babacf;
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1020px) {
   .testimonial__subtitle {
     font-size: 2rem;
     line-height: 3.8rem;
